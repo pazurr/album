@@ -1,144 +1,40 @@
-/* valeur globale de toute la page */
 body{
-    margin:0;   
-    background: linear-gradient(45deg, #de9051,#804e25)
-}
-/* navbar avec tout les info (info sur lalbum,titre,autrealbum,traclist) */
-#navbar{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    font-size: 20px;
-    background-color: #de9051;
+    background-color: #1C1C1C;
     margin: 0;
-    padding: 10px;
+    width: 100%;
+    height: 100%;
 }
-.coveralbum{
+
+#boxHead{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 0;
 }
-/* tout le css du vynil et tourne vynil */
-#click{
-    margin: 0;
-    position: absolute;
-    top: 31rem;
-    background-color: aliceblue;
-    border-radius: 5%;
-    padding: 3px;
-    z-index: 1;
-    opacity: 0.7;
-}
-#img_tournedisce{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 30px;
-    z-index: 10;
-    width: 400px;
-    height: 400px;  
-    z-index: 10;
-}
-#vynil{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 30px;
-    z-index: 10;
-    width: 400px;
-    height: 400px;
-}
-#vynil:hover{
-    animation: rotate 5s linear infinite;
-    filter: brightness(0.9); 
-}
-/* css pour le texte info */
-.textealbum {
-    width: 30%;
-    padding: 10px 40px 10px 40px;
-    margin: 0;
-    background-color: aliceblue;
-    position: absolute;
-    top:5rem ;
-    left:6rem;
-    border-radius: 15px;
-    z-index: 30;
- }
- #text{
+
+#imgNirvana{
     width: 100%;
-    font-size: 20px;
-    text-align: left;
-}
-.textealbum, h2{
-    margin: 0;
-}
-/* nav trackliste */
-
-#grandnav{
-    width: 30%;
-    position: absolute;
-    top:5rem ;
-    left:25rem;
-    background-color: aliceblue;
-    padding: 10px 80px 80px 80px;
-    border-radius: 15px;
-    z-index: 30;
-   
-}
-#grandnav:hover{
-    box-shadow: 10px 10px 15px rgb(0, 0, 0,0.3);
-}
-.nav,ol,li{
-    line-height: 2;
+    height:auto;
 }
 
-/* titre nevremind */
-#titre{
-    width: 20%;
-    margin: 0;
-    background-color: aliceblue;
-    position: absolute;
-    top:5rem ;
-    left: 42rem;
-    border-radius: 15px;
-    z-index: 30;
-    margin:0;
-    text-align: center;
+#bgnirvana {
+    background-image: url("https://seeklogo.com/images/N/nirvana-logo-7F1DF5AC2E-seeklogo.com.png");
+    opacity: 0.5;
 }
-/* animation vynil */
-@keyframes rotate {
-    0% {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-  }
 
-/* tout les autre albu */
-#imgalb{
-    width: 200px;
+
+#imgtitrenirvana{
+    width: 500px;
+    height: 200PX;
+}
+
+#black{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#fondu{
+    background: linear-gradient(to  bottom, black, rgba(0, 0, 0, 0));
+    width: 100%;
     height: 200px;
-    
 }
-
-#other_album{
-    width: 30%;
-    position: absolute;
-    top:5rem ;
-    left:45rem;
-    background-color: aliceblue;
-    padding: 5px 80px 5px 80px;
-    border-radius: 15px;
-    z-index: 30;
-    display: flex   ;
-}
-
-h4{
-    position: absolute;
-    top:20px;
-}
-
