@@ -5,23 +5,6 @@ body{
     height: 100%;
 }
 
-#boxHead{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-#imgNirvana{
-    width: 100%;
-    height:auto;
-}
-
-#bgnirvana {
-    background-image: url("https://seeklogo.com/images/N/nirvana-logo-7F1DF5AC2E-seeklogo.com.png");
-    opacity: 0.5;
-}
-
-
 #imgtitrenirvana{
     width: 500px;
     height: 200PX;
@@ -36,5 +19,56 @@ body{
 #fondu{
     background: linear-gradient(to  bottom, black, rgba(0, 0, 0, 0));
     width: 100%;
-    height: 200px;
+    height: 100px;
 }
+
+#imgecover{
+    width: 400px;
+    height: 400Px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+#imgvynil{
+    width: 400px;
+    height: 400Px;
+   display: flex;
+   justify-content: center;
+   z-index:0;
+   position: relative;
+   right: 300px;
+   
+}
+
+
+#imgcoveralbum{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 50px;
+}
+
+.imglogonirvana{
+    margin-left: auto;
+    position: relative;
+    top: 20px;
+}
+
+
+#imgvynil:hover{
+    animation: move 5s infinite;
+
+}
+
+   @keyframes move {
+            0% {
+                transform: translateX(0); /* Position initiale */
+            }
+            50% {
+                transform: translateX(300px); /* Déplacement à 300px à droite */
+            }
+            100% {
+                transform: translateX(0); /* Retour à la position initiale */
+            }
+        }
+
